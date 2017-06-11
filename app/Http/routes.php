@@ -9,5 +9,6 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::get('/xvideos', ['uses' => 'CrawlerController@xvideos', 'as' => 'xvideos']);
 require (__DIR__ . '/Routes/frontend.php');
 require (__DIR__ . '/Routes/backend.php');
