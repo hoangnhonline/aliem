@@ -34,7 +34,9 @@ class CrawlerController extends Controller
     public function imageXvideos(){
         set_time_limit(1000000);
         $videoList = CrwVideo::whereNull('image_url')->get();
-        foreach ($videoList as $video) {
+        CrwVideo::where('video_url', 'like', '%profile%')->delete();
+        CrwVideo::where('video_url', 'verified', '%profile%')->delete();        
+        foreach ($videoList as $video) {         
             $video_url = $video->video_url;
             $image_url = $this->getImageUrlXvideo($video_url);
             $image_url = str_replace('ll', 'lll', $image_url);
@@ -45,12 +47,21 @@ class CrawlerController extends Controller
     public function xvideos(){        
         set_time_limit(1000000);
         //$arr = ['loai_id' => $loai_id, 'cate_id' => $cate_id];
+        /*
+        1 : bedroom
+        2 : hot teen
+        3 : best-blowjob http://www.xvideos.com/tags/best-blowjob
+        4 : sinh vien http://www.xvideos.com/?k=sinh+vien&p=83
+        5 : hoc sinh http://www.xvideos.com/?k=hoc+sinh&p=
+        6 : quay len http://www.xvideos.com/?k=quay+len&p=
+        */
+
         for($page = 0; $page <= 84; $page++){
-            $url = 'http://www.xvideos.com/tags/hot-teen';
+            //$url = 'http://www.xvideos.com/?k=quay+len&p=';
             //http://www.xvideos.com/tags/best-blowjob
-            //http://www.xvideos.com/?k=sinh+vien&p=83
+            //
             $url = $url.$page;
-            $arr = $this->getXvideos($url, 2, 1);            
+            $arr = $this->getXvideos($url, 6, 1);            
         }
          dd('done');
         return $arr;
