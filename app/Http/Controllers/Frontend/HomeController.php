@@ -29,22 +29,7 @@ class HomeController extends Controller
 
     public function __construct(){
         
-        self::$parentCate = Category::getParentCateList( 1 );
-
-        if( self::$parentCate ){
-            foreach (self::$parentCate as $key => $value) {
-                self::$categoryArrKey[$value->id] = ['name' => $value->name, 'slug' => $value->slug];
-            }
-        }       
-
-        self::$countryArr = Country::orderBy('display_order')->get();
-
-        if( self::$countryArr ){
-            foreach (self::$countryArr as $key => $value) {
-                self::$categoryArrKey[$value->id] = ['name' => $value->name, 'slug' => $value->slug];
-            }
-        }
-        view()->share(['parentCate' => self::$parentCate, 'countryArr' => self::$countryArr, '']);
+        
 
     }
     /**
@@ -53,35 +38,13 @@ class HomeController extends Controller
     * @return Response
     */
     public function index(Request $request)
-    {       
+    {      
+
         $settingArr = Settings::whereRaw('1')->lists('value', 'name');
 
         $layout_name = $page_name = "";
-
-        $phimLeArr = $phimBoArr = $arrEpisode = [];
-        $phimLeArr = Film::where('status', 1)->where('type', 1)                        
-                                ->orderBy('id', 'desc')->limit(16)->get();
-        $phimBoArr = Film::where('status', 1)->where('type', 2)                            
-                        //->groupBy('film_id')                                                                     
-                        ->orderBy('updated_episode_date', 'desc')->limit(16)->get();      
-
-        if( $phimBoArr->count() > 0) {
-            foreach( $phimBoArr as $phim)
-            {
-               // var_dump($phim->id);die;
-                $tmp = FilmEpisode::where('film_id', $phim->id)->orderBy('display_order', 'desc')->orderBy('id', 'desc')->select('name')->first();
-                if($tmp){
-                    $arrEpisode[$phim->id] = $tmp->name;
-                }
-            }
-        }
-      //  var_dump("<pre>", $arrEpisode);die;
-        //articles
-        $articlesArr = Articles::where([ 'status' => 1, 'is_hot' => 1 ])->orderBy('id', 'desc')->select('id', 'slug', 'title', 'image_url')->limit(10)->get();
-
-        $hotArr = Film::where([ 'status' => 1, 'slide' => 1 ])->orderBy('id', 'desc')->select('id', 'slug', 'title', 'image_url', 'description', 'slide', 'views', 'likes', 'imdb', 'order', 'push_top', 'poster_url', 'quality')->limit(10)->get();        
-
-        return view('home.index', compact( 'settingArr', 'page_name', 'layout_name', 'hotArr', 'articlesArr', 'settingArr', 'phimLeArr', 'phimBoArr', 'arrEpisode'));
+              
+        return view('home.index', compact( 'settingArr'));
     }
     
     public function ajaxTab(Request $request){
