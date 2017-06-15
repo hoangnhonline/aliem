@@ -32,6 +32,7 @@ class CrawlerController extends Controller
         return $dom;
     }
     public function imageXvideos(){
+        set_time_limit(1000000);
         $videoList = CrwVideo::whereNull('image_url')->get();
         foreach ($videoList as $video) {
             $video_url = $video->video_url;
@@ -46,6 +47,8 @@ class CrawlerController extends Controller
         //$arr = ['loai_id' => $loai_id, 'cate_id' => $cate_id];
         for($page = 0; $page <= 84; $page++){
             $url = 'http://www.xvideos.com/tags/hot-teen';
+            //http://www.xvideos.com/tags/best-blowjob
+            //http://www.xvideos.com/?k=sinh+vien&p=83
             $url = $url.$page;
             $arr = $this->getXvideos($url, 2, 1);            
         }
