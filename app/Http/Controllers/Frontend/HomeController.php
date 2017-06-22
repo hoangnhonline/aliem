@@ -5,10 +5,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Models\Category;
-use App\Models\Country;
-use App\Models\Film;
-use App\Models\Crew;
+use App\Models\Import;
+use App\Models\CrwVideo;
+use App\Models\Cate;
+use App\Models\Movies;
 use App\Models\Tag;
 use App\Models\TagObjects;
 use App\Models\Settings;
@@ -28,7 +28,29 @@ class HomeController extends Controller
     public static $categoryArrKey = [];    
 
     public function __construct(){
-        
+        $date = date('Y-m-d', time());
+
+        if(Import::where('imported_date', $date)->count() == 0){
+            $cateList = Cate::where('status', 1)->orderBy('display_order')->get();
+            foreach($cateList as $cate){
+                $videoList = CrwVideo::where('cate_id', $cate->id)->where('publish_status', 0)->inRandomOrder()->limit(10)->get();
+                foreach ($videoList as $vid) {
+                        
+                    Movies::create(
+                        [
+                        'title' => $vid->title,
+                        'slug' => str_slug($vid->title),
+                        'video_url' => $vid->video_url,
+                        'duration' => $vid->duration,
+                        'cate_id' => $vid->cate_id,
+                        'image_url' => $vid->image_url
+                        ]  
+                    );
+                    $vid->update(['site_id_publish' => 1, 'publish_status' => 1]);   
+                }
+            }
+            Import::create(['imported_date', $date]);
+        }
         
 
     }
@@ -38,13 +60,14 @@ class HomeController extends Controller
     * @return Response
     */
     public function index(Request $request)
-    {      
+    {   
+        $moviesArr = [];
+        $cateList = Cate::where('status', 1)->orderBy('display_order')->get();
+        foreach($cateList as $cate){
+            $moviesArr[$cate->id] = Movies::where('cate_id',  $cate->id)->orderBy('id', 'desc')->limit(9)->get();
+        }
 
-        $settingArr = Settings::whereRaw('1')->lists('value', 'name');
-
-        $layout_name = $page_name = "";
-              
-        return view('home.index', compact( 'settingArr'));
+        return view('frontend.home.index', compact(['moviesArr']));
     }
     
     public function ajaxTab(Request $request){

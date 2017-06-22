@@ -27,7 +27,7 @@ class CrwVideo extends Model  {
                             'duration', 
                             'image_url', 
                             'video_url', 
-                            'tag_id', 
+                            'cate_id', 
                             'site_id',
                             'publish_status', 
                             'publish_site_id', 

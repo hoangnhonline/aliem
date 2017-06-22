@@ -1,4 +1,4 @@
-<?php namespace App\Models\Backend;
+<?php namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -23,6 +23,12 @@ class Movies extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['title', 'slug', 'alias', 'parent_id', 'cate_id', 'is_hot', 'status', 'display_order', 'description', 'url', 'image_url', 'site_id', 'content', 'quality', 'duration', '','meta_title', 'meta_description', 'meta_keywords', 'custom_text'];
+    protected $fillable = [ 'title', 
+                            'duration', 
+                            'image_url', 
+                            'video_url', 
+                            'cate_id', 
+                            'slug'
+                            ];   
     
 }

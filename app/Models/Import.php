@@ -1,28 +1,29 @@
-<?php namespace App\Models\Backend;
+<?php namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 
-class Cate extends Model  {
+class Import extends Model  {
 
 	/**
 	 * The database table used by the model.
 	 *
 	 * @var string
 	 */
-	protected $table = 'san_pham';	
+	protected $table = 'import';
 
 	 /**
      * Indicates if the model should be timestamped.
      *
      * @var bool
      */
-    public $timestamps = true;
+    public $timestamps = false;
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $fillable = ['name', 'slug', 'alias', 'bg_color', 'is_hot', 'status', 'icon_url', 'image_url', 'display_order', 'description', 'home_style', 'ads_url'];
+    protected $fillable = [ 'imported_date'
+                            ];   
     
 }

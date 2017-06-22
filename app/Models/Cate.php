@@ -1,4 +1,4 @@
-<?php namespace App\Models\Backend;
+<?php namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,7 +10,7 @@ class Cate extends Model  {
 	 *
 	 * @var string
 	 */
-	protected $table = 'cate';	
+	protected $table = 'cate';
 
 	 /**
      * Indicates if the model should be timestamped.
@@ -23,6 +23,5 @@ class Cate extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['name', 'slug', 'alias', 'parent_id', 'is_hot', 'status', 'display_order', 'description', 'meta_title', 'meta_description', 'meta_keywords', 'custom_text'];
-    
+    protected $fillable = ['name', 'slug', 'status', 'display_order'];
 }

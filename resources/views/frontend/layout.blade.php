@@ -50,7 +50,7 @@
       <div class="main">
          <header class="sidebar">
             <div class="container">
-               <div class="logo header-item"><a href="index.html" title="JavHiHi.com"><img src="statics/assets/img/logo.png" alt="JavHiHi.com" /></a></div>
+               <div class="logo header-item"><a href="index.html" title="JavHiHi.com"><img src="{{ URL::asset('assets/img/logo.png') }}" alt="JavHiHi.com" /></a></div>
                <div class="form-search header-item">
                   <form onsubmit="return search();">
                      <div class="input-group">
@@ -125,7 +125,7 @@
          </header>
          <div class="header-mobile">
             <button type="button" class="show-sidebar-left"><i class="glyphicon glyphicon-menu-hamburger"></i></button>
-            <a href="index.html" title="JavHiHi.com"><img src="statics/assets/img/logo.png" alt="JavHiHi.com" /></a>
+            <a href="index.html" title="JavHiHi.com"><img src="{{ URL::asset('assets/img/logo.png') }}" alt="JavHiHi.com" /></a>
          </div>
          <div class="main-page">
             <section class="breadcrumb-wrapper visible-md-block visible-lg-block">
@@ -144,7 +144,7 @@
                         <div class="video-item">
                            <div class="item-thumbnail">
                               <a href="movie/sexy-spy-sumire-matsu-takes-load-of-cum-in-her-pussy.1184.html" title="Sexy Spy Sumire Matsu Takes Load of Cum in Her Pussy" >
-                                 <img src="statics/images/movies/javhihi.com-sexy-spy-sumire-matsu-takes-load-of-cum-in-her-pussy.jpg" width="748" height="421" alt="Sexy Spy Sumire Matsu Takes Load of Cum in Her Pussy">
+                                 <img src="{{ URL::asset('images/movies/javhihi.com-sexy-spy-sumire-matsu-takes-load-of-cum-in-her-pussy.jpg') }}" width="748" height="421" alt="Sexy Spy Sumire Matsu Takes Load of Cum in Her Pussy">
                                  <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                               </a>
                               <div class="item-head">
@@ -158,7 +158,7 @@
                            <div class="video-item">
                               <div class="item-thumbnail">
                                  <a href="movie/suzu-minamoto-with-big-butt-is-screwed.1196.html" title="Suzu Minamoto with big butt is screwed" >
-                                    <img src="statics/images/movies/javhihi.com-suzu-minamoto-with-big-butt-is-screwed.jpg" width="356" height="200" alt="Suzu Minamoto with big butt is screwed">
+                                    <img src="{{ URL::asset('images/movies/javhihi.com-suzu-minamoto-with-big-butt-is-screwed.jpg') }}" width="356" height="200" alt="Suzu Minamoto with big butt is screwed">
                                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                                  </a>
                                  <div class="item-head">
@@ -169,7 +169,7 @@
                            <div class="video-item">
                               <div class="item-thumbnail">
                                  <a href="movie/suzu-minamoto-sucks-dick-while-gets-cock.1166.html" title="Suzu Minamoto sucks dick while gets cock" >
-                                    <img src="statics/images/movies/javhihi.com-suzu-minamoto-sucks-dick-while-gets-cock.jpg" width="356" height="200" alt="Suzu Minamoto sucks dick while gets cock">
+                                    <img src="{{ URL::asset('images/movies/javhihi.com-suzu-minamoto-sucks-dick-while-gets-cock.jpg') }}" width="356" height="200" alt="Suzu Minamoto sucks dick while gets cock">
                                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                                  </a>
                                  <div class="item-head">
@@ -182,7 +182,7 @@
                            <div class="video-item">
                               <div class="item-thumbnail">
                                  <a href="movie/marika-s-japan-girl-blowjob-ends-in-a-pussy-creampie.1159.html" title="Marika's japan girl blowjob ends in a pussy creampie" >
-                                    <img src="statics/images/movies/javhihi.com-marika-s-japan-girl-blowjob-ends-in-a-pussy-creampie.jpg" width="356" height="200" alt="Marika's japan girl blowjob ends in a pussy creampie">
+                                    <img src="{{ URL::asset('images/movies/javhihi.com-marika-s-japan-girl-blowjob-ends-in-a-pussy-creampie.jpg') }}" width="356" height="200" alt="Marika's japan girl blowjob ends in a pussy creampie">
                                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                                  </a>
                                  <div class="item-head">
@@ -193,7 +193,7 @@
                            <div class="video-item">
                               <div class="item-thumbnail">
                                  <a href="movie/ruhime-maiori-is-nailed-in-dark-poonanie.1137.html" title="Ruhime Maiori is nailed in dark poonanie" >
-                                    <img src="statics/images/movies/javhihi.com-ruhime-maiori-is-nailed-in-dark-poonanie.jpg" width="356" height="200" alt="Ruhime Maiori is nailed in dark poonanie">
+                                    <img src="{{ URL::asset('images/movies/javhihi.com-ruhime-maiori-is-nailed-in-dark-poonanie.jpg') }}" width="356" height="200" alt="Ruhime Maiori is nailed in dark poonanie">
                                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                                  </a>
                                  <div class="item-head">
@@ -205,7 +205,7 @@
                         <div class="video-item">
                            <div class="item-thumbnail">
                               <a href="movie/kaoru-natsuki-has-strong-fuck-of-nooky.1125.html" title="Kaoru Natsuki has strong fuck of nooky" >
-                                 <img src="statics/images/movies/javhihi.com-kaoru-natsuki-has-strong-fuck-of-nooky.jpg" width="748" height="421" alt="Kaoru Natsuki has strong fuck of nooky">
+                                 <img src="{{ URL::asset('images/movies/javhihi.com-kaoru-natsuki-has-strong-fuck-of-nooky.jpg') }}" width="748" height="421" alt="Kaoru Natsuki has strong fuck of nooky">
                                  <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                               </a>
                               <div class="item-head">
@@ -219,7 +219,7 @@
                            <div class="video-item">
                               <div class="item-thumbnail">
                                  <a href="movie/saori-s-make-out-session-turns-into-hardcore-fucking.1090.html" title="Saori's Make out Session Turns into Hardcore Fucking" >
-                                    <img src="statics/images/movies/javhihi.com-saori-s-make-out-session-turns-into-hardcore-fucking.jpg" width="356" height="200" alt="Saori's Make out Session Turns into Hardcore Fucking">
+                                    <img src="{{ URL::asset('images/movies/javhihi.com-saori-s-make-out-session-turns-into-hardcore-fucking.jpg') }}" width="356" height="200" alt="Saori's Make out Session Turns into Hardcore Fucking">
                                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                                  </a>
                                  <div class="item-head">
@@ -230,7 +230,7 @@
                            <div class="video-item">
                               <div class="item-thumbnail">
                                  <a href="movie/ruri-hayami-s-milf-pussy-gets-creampied-in-a-threesome.1105.html" title="Ruri Hayami's MILF Pussy Gets Creampied In A Threesome" >
-                                    <img src="statics/images/movies/javhihi.com-ruri-hayami-s-milf-pussy-gets-creampied-in-a-threesome.jpg" width="356" height="200" alt="Ruri Hayami's MILF Pussy Gets Creampied In A Threesome">
+                                    <img src="{{ URL::asset('images/movies/javhihi.com-ruri-hayami-s-milf-pussy-gets-creampied-in-a-threesome.jpg') }}" width="356" height="200" alt="Ruri Hayami's MILF Pussy Gets Creampied In A Threesome">
                                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                                  </a>
                                  <div class="item-head">
@@ -243,7 +243,7 @@
                            <div class="video-item">
                               <div class="item-thumbnail">
                                  <a href="movie/two-guys-fuck-sana-anju-s-tight-holes-in-class.1107.html" title="Two Guys Fuck Sana Anju's Tight Holes In Class" >
-                                    <img src="statics/images/movies/javhihi.com-two-guys-fuck-sana-anju-s-tight-holes-in-class.jpg" width="356" height="200" alt="Two Guys Fuck Sana Anju's Tight Holes In Class">
+                                    <img src="{{ URL::asset('images/movies/javhihi.com-two-guys-fuck-sana-anju-s-tight-holes-in-class.jpg') }}" width="356" height="200" alt="Two Guys Fuck Sana Anju's Tight Holes In Class">
                                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                                  </a>
                                  <div class="item-head">
@@ -254,7 +254,7 @@
                            <div class="video-item">
                               <div class="item-thumbnail">
                                  <a href="movie/akina-hara-licks-and-sucks-two-shlongs.1044.html" title="Akina Hara licks and sucks two shlongs" >
-                                    <img src="statics/images/movies/javhihi.com-akina-hara-licks-and-sucks-two-shlongs.jpg" width="356" height="200" alt="Akina Hara licks and sucks two shlongs">
+                                    <img src="{{ URL::asset('images/movies/javhihi.com-akina-hara-licks-and-sucks-two-shlongs.jpg') }}" width="356" height="200" alt="Akina Hara licks and sucks two shlongs">
                                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                                  </a>
                                  <div class="item-head">
@@ -266,7 +266,7 @@
                         <div class="video-item">
                            <div class="item-thumbnail">
                               <a href="movie/yuu-sakura-in-a-hot-horny-and-hardcore-action.1084.html" title="Yuu Sakura in a hot, horny and hardcore action" >
-                                 <img src="statics/images/movies/javhihi.com-yuu-sakura-in-a-hot-horny-and-hardcore-action.jpg" width="748" height="421" alt="Yuu Sakura in a hot, horny and hardcore action">
+                                 <img src="{{ URL::asset('images/movies/javhihi.com-yuu-sakura-in-a-hot-horny-and-hardcore-action.jpg') }}" width="748" height="421" alt="Yuu Sakura in a hot, horny and hardcore action">
                                  <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                               </a>
                               <div class="item-head">
@@ -280,7 +280,7 @@
                            <div class="video-item">
                               <div class="item-thumbnail">
                                  <a href="movie/toys-fucking-hina-maeda-s-pussy-makes-her-squirt.1083.html" title="Toys Fucking Hina Maeda's Pussy Makes Her Squirt" >
-                                    <img src="statics/images/movies/javhihi.com-toys-fucking-hina-maeda-s-pussy-makes-her-squirt.jpg" width="356" height="200" alt="Toys Fucking Hina Maeda's Pussy Makes Her Squirt">
+                                    <img src="{{ URL::asset('images/movies/javhihi.com-toys-fucking-hina-maeda-s-pussy-makes-her-squirt.jpg') }}" width="356" height="200" alt="Toys Fucking Hina Maeda's Pussy Makes Her Squirt">
                                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                                  </a>
                                  <div class="item-head">
@@ -291,7 +291,7 @@
                            <div class="video-item">
                               <div class="item-thumbnail">
                                  <a href="movie/satomi-suzuki-busty-is-fucked-like-crazy.1046.html" title="Satomi Suzuki busty is fucked like crazy" >
-                                    <img src="statics/images/movies/javhihi.com-satomi-suzuki-busty-is-fucked-like-crazy.jpg" width="356" height="200" alt="Satomi Suzuki busty is fucked like crazy">
+                                    <img src="{{ URL::asset('images/movies/javhihi.com-satomi-suzuki-busty-is-fucked-like-crazy.jpg') }}" width="356" height="200" alt="Satomi Suzuki busty is fucked like crazy">
                                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                                  </a>
                                  <div class="item-head">
@@ -304,7 +304,7 @@
                            <div class="video-item">
                               <div class="item-thumbnail">
                                  <a href="movie/mai-asahina-s-pussy-oozes-cum-after-a-threesome.1013.html" title="Mai Asahina's Pussy Oozes Cum After A Threesome" >
-                                    <img src="statics/images/movies/javhihi.com-mai-asahina-s-pussy-oozes-cum-after-a-threesome.jpg" width="356" height="200" alt="Mai Asahina's Pussy Oozes Cum After A Threesome">
+                                    <img src="{{ URL::asset('images/movies/javhihi.com-mai-asahina-s-pussy-oozes-cum-after-a-threesome.jpg') }}" width="356" height="200" alt="Mai Asahina's Pussy Oozes Cum After A Threesome">
                                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                                  </a>
                                  <div class="item-head">
@@ -315,7 +315,7 @@
                            <div class="video-item">
                               <div class="item-thumbnail">
                                  <a href="movie/noriko-kago-gets-fondled-and-fucked-in-every-way.1011.html" title="Noriko Kago gets fondled and fucked in every way!" >
-                                    <img src="statics/images/movies/javhihi.com-noriko-kago-gets-fondled-and-fucked-in-every-way.jpg" width="356" height="200" alt="Noriko Kago gets fondled and fucked in every way!">
+                                    <img src="{{ URL::asset('images/movies/javhihi.com-noriko-kago-gets-fondled-and-fucked-in-every-way.jpg') }}" width="356" height="200" alt="Noriko Kago gets fondled and fucked in every way!">
                                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                                  </a>
                                  <div class="item-head">
@@ -336,356 +336,42 @@
                </div>
                <!--head-carousel-->
             </section>
-            <!--/slider-->     
+            <!--/slider--> 
+            @foreach($cateList as $cate)    
             <div class="container">
                <div class="box">
                   <div class="clearfix"></div>
-                  <h3 class="title">Newest Movies <a href="movie.html" title="View more newest movies"><i class="glyphicon glyphicon-chevron-right"></i></a></h3>
+                  <h3 class="title">{!! $cate->name !!} <a href="movie.html" title="View more newest movies"><i class="glyphicon glyphicon-chevron-right"></i></a></h3>
                   <div class="movie-list">
+                      @foreach($moviesArr[$cate->id] as $vid)
                      <div class="col-md-4 col-sm-6">
                         <div class="video-item">
                            <div class="item-thumbnail">
-                              <a href="movie/meguru-kosaka-sucks-joystick-in-wild-69.1228.html" title="Meguru Kosaka sucks joystick in wild 69" >
-                                 <img src="statics/images/movies/javhihi.com-meguru-kosaka-sucks-joystick-in-wild-69.jpg" alt="Meguru Kosaka sucks joystick in wild 69">
+                              <a href="movie/meguru-kosaka-sucks-joystick-in-wild-69.1228.html" title="{!! $vid->title !!}" >
+                                 <img src="{!! $vid->image_url !!}" alt="{!! $vid->title !!}">
                                  <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                               </a>
                               <span class="duration">18:37</span>
                               <span class="quality">HD</span>
                            </div>
                            <div class="item-detail">
-                              <h4><a href="movie/meguru-kosaka-sucks-joystick-in-wild-69.1228.html" title="Meguru Kosaka sucks joystick in wild 69">Meguru Kosaka sucks joystick in wild 69</a></h4>
+                              <h4><a href="movie/meguru-kosaka-sucks-joystick-in-wild-69.1228.html" title="{!! $vid->title !!}">{!! $vid->title !!}</a></h4>
                               <p>
                                  <span>47 views</span>
                                  <i class="glyphicon glyphicon-one-fine-dot"></i> 
                                  <span>0 likes</span>
                                  <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>2016-05-15</span>
+                                 <span>{!! date('d-m-Y H:i', strtotime($vid->created_at)) !!}</span>
                               </p>
                            </div>
                         </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="video-item">
-                           <div class="item-thumbnail">
-                              <a href="movie/sara-with-nasty-boobies-is-well-nailed.1227.html" title="SARA with nasty boobies is well nailed" >
-                                 <img src="statics/images/movies/javhihi.com-sara-with-nasty-boobies-is-well-nailed.jpg" alt="SARA with nasty boobies is well nailed">
-                                 <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                              </a>
-                              <span class="duration">27:00</span>
-                              <span class="quality">HD</span>
-                           </div>
-                           <div class="item-detail">
-                              <h4><a href="movie/sara-with-nasty-boobies-is-well-nailed.1227.html" title="SARA with nasty boobies is well nailed">SARA with nasty boobies is well nailed</a></h4>
-                              <p>
-                                 <span>51 views</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>0 likes</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>2016-05-15</span>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="video-item">
-                           <div class="item-thumbnail">
-                              <a href="movie/two-older-guys-pound-hina-maeda-s-shaved-pussy.1226.html" title="Two Older Guys Pound Hina Maeda's Shaved Pussy" >
-                                 <img src="statics/images/movies/javhihi.com-two-older-guys-pound-hina-maeda-s-shaved-pussy.jpg" alt="Two Older Guys Pound Hina Maeda's Shaved Pussy">
-                                 <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                              </a>
-                              <span class="duration">36:40</span>
-                              <span class="quality">HD</span>
-                           </div>
-                           <div class="item-detail">
-                              <h4><a href="movie/two-older-guys-pound-hina-maeda-s-shaved-pussy.1226.html" title="Two Older Guys Pound Hina Maeda's Shaved Pussy">Two Older Guys Pound Hina Maeda's Shaved Pussy</a></h4>
-                              <p>
-                                 <span>112 views</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>0 likes</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>2016-05-15</span>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="video-item">
-                           <div class="item-thumbnail">
-                              <a href="movie/sumire-matsu-sucks-shlong-while-is-fucked.1225.html" title="Sumire Matsu sucks shlong while is fucked" >
-                                 <img src="statics/images/movies/javhihi.com-sumire-matsu-sucks-shlong-while-is-fucked.jpg" alt="Sumire Matsu sucks shlong while is fucked">
-                                 <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                              </a>
-                              <span class="duration">35:54</span>
-                              <span class="quality">HD</span>
-                           </div>
-                           <div class="item-detail">
-                              <h4><a href="movie/sumire-matsu-sucks-shlong-while-is-fucked.1225.html" title="Sumire Matsu sucks shlong while is fucked">Sumire Matsu sucks shlong while is fucked</a></h4>
-                              <p>
-                                 <span>75 views</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>0 likes</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>2016-05-15</span>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="video-item">
-                           <div class="item-thumbnail">
-                              <a href="movie/mirai-mugen-pussy-exposed-and-cumming-in-japanese-bondage.1224.html" title="Mirai Mugen Pussy Exposed and Cumming in Japanese Bondage" >
-                                 <img src="statics/images/movies/javhihi.com-mirai-mugen-pussy-exposed-and-cumming-in-japanese-bondage.jpg" alt="Mirai Mugen Pussy Exposed and Cumming in Japanese Bondage">
-                                 <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                              </a>
-                              <span class="duration">8:52</span>
-                              <span class="quality">HD</span>
-                           </div>
-                           <div class="item-detail">
-                              <h4><a href="movie/mirai-mugen-pussy-exposed-and-cumming-in-japanese-bondage.1224.html" title="Mirai Mugen Pussy Exposed and Cumming in Japanese Bondage">Mirai Mugen Pussy Exposed and Cumming in Japanese Bondage</a></h4>
-                              <p>
-                                 <span>121 views</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>0 likes</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>2016-05-15</span>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="video-item">
-                           <div class="item-thumbnail">
-                              <a href="movie/saori-s-busy-with-her-vibrator-on-her-milf-pussy.1223.html" title="Saori's Busy With Her Vibrator On Her MILF Pussy" >
-                                 <img src="statics/images/movies/javhihi.com-saori-s-busy-with-her-vibrator-on-her-milf-pussy.jpg" alt="Saori's Busy With Her Vibrator On Her MILF Pussy">
-                                 <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                              </a>
-                              <span class="duration">19:48</span>
-                              <span class="quality">HD</span>
-                           </div>
-                           <div class="item-detail">
-                              <h4><a href="movie/saori-s-busy-with-her-vibrator-on-her-milf-pussy.1223.html" title="Saori's Busy With Her Vibrator On Her MILF Pussy">Saori's Busy With Her Vibrator On Her MILF Pussy</a></h4>
-                              <p>
-                                 <span>34 views</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>0 likes</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>2016-05-15</span>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="video-item">
-                           <div class="item-thumbnail">
-                              <a href="movie/cute-junko-doll-sucks-and-bites-strong-penis.1222.html" title="Cute Junko doll sucks and bites strong penis" >
-                                 <img src="statics/images/movies/javhihi.com-cute-junko-doll-sucks-and-bites-strong-penis.jpg" alt="Cute Junko doll sucks and bites strong penis">
-                                 <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                              </a>
-                              <span class="duration">39:09</span>
-                              <span class="quality">HD</span>
-                           </div>
-                           <div class="item-detail">
-                              <h4><a href="movie/cute-junko-doll-sucks-and-bites-strong-penis.1222.html" title="Cute Junko doll sucks and bites strong penis">Cute Junko doll sucks and bites strong penis</a></h4>
-                              <p>
-                                 <span>5,894 views</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>14 likes</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>2016-05-14</span>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="video-item">
-                           <div class="item-thumbnail">
-                              <a href="movie/sweet-nana-kawase-rubs-nooky-and-sucks-woody.1221.html" title="Sweet Nana Kawase rubs nooky and sucks woody" >
-                                 <img src="statics/images/movies/javhihi.com-sweet-nana-kawase-rubs-nooky-and-sucks-woody.jpg" alt="Sweet Nana Kawase rubs nooky and sucks woody">
-                                 <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                              </a>
-                              <span class="duration">17:17</span>
-                              <span class="quality">HD</span>
-                           </div>
-                           <div class="item-detail">
-                              <h4><a href="movie/sweet-nana-kawase-rubs-nooky-and-sucks-woody.1221.html" title="Sweet Nana Kawase rubs nooky and sucks woody">Sweet Nana Kawase rubs nooky and sucks woody</a></h4>
-                              <p>
-                                 <span>6,128 views</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>18 likes</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>2016-05-14</span>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="video-item">
-                           <div class="item-thumbnail">
-                              <a href="movie/miho-wakabayashi-licks-tool-in-drilling.1220.html" title="Miho Wakabayashi licks tool in drilling" >
-                                 <img src="statics/images/movies/javhihi.com-miho-wakabayashi-licks-tool-in-drilling.jpg" alt="Miho Wakabayashi licks tool in drilling">
-                                 <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                              </a>
-                              <span class="duration">36:32</span>
-                              <span class="quality">HD</span>
-                           </div>
-                           <div class="item-detail">
-                              <h4><a href="movie/miho-wakabayashi-licks-tool-in-drilling.1220.html" title="Miho Wakabayashi licks tool in drilling">Miho Wakabayashi licks tool in drilling</a></h4>
-                              <p>
-                                 <span>5,124 views</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>9 likes</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>2016-05-14</span>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
+                     </div>                     
+                     @endforeach
                   </div>
                   <div class="clearfix"></div>
                </div>
-            </div>
-            <div class="container">
-               <div class="box">
-                  <div class="clearfix"></div>
-                  <h3 class="title">Most Viewed This Week <a href="movief86e.html?sort=viewweek" title="View more Most Viewed This Week"><i class="glyphicon glyphicon-chevron-right"></i></a></h3>
-                  <div class="movie-list">
-                     <div class="col-md-4 col-sm-6">
-                        <div class="video-item">
-                           <div class="item-thumbnail">
-                              <a href="movie/maomi-nagasawa-takes-asian-creampies-in-her-teen-twat.1218.html" title="Maomi Nagasawa takes asian creampies in her teen twat" >
-                                 <img src="statics/images/movies/javhihi.com-maomi-nagasawa-takes-asian-creampies-in-her-teen-twat.jpg" alt="Maomi Nagasawa takes asian creampies in her teen twat">
-                                 <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                              </a>
-                              <span class="duration">30:34</span>
-                              <span class="quality">HD</span>
-                           </div>
-                           <div class="item-detail">
-                              <h4><a href="movie/maomi-nagasawa-takes-asian-creampies-in-her-teen-twat.1218.html" title="Maomi Nagasawa takes asian creampies in her teen twat">Maomi Nagasawa takes asian creampies in her teen twat</a></h4>
-                              <p>
-                                 <span>11,912 views</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>35 likes</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>2016-05-14</span>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="video-item">
-                           <div class="item-thumbnail">
-                              <a href="movie/hardcore-fucking-and-sucking-for-japanese-star-maria-ozawa.721.html" title="Hardcore Fucking and Sucking for Japanese Star Maria Ozawa" >
-                                 <img src="statics/images/movies/javhihi.com-hardcore-fucking-and-sucking-for-japanese-honey-maria-ozawa.jpg" alt="Hardcore Fucking and Sucking for Japanese Star Maria Ozawa">
-                                 <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                              </a>
-                              <span class="duration">31:58</span>
-                              <span class="quality">HD</span>
-                           </div>
-                           <div class="item-detail">
-                              <h4><a href="movie/hardcore-fucking-and-sucking-for-japanese-star-maria-ozawa.721.html" title="Hardcore Fucking and Sucking for Japanese Star Maria Ozawa">Hardcore Fucking and Sucking for Japanese Star Maria Ozawa</a></h4>
-                              <p>
-                                 <span>1,097,030 views</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>1,769 likes</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>2015-07-31</span>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="video-item">
-                           <div class="item-thumbnail">
-                              <a href="movie/sensual-jav-beauty-mei-haruka-asian-hardcore.42.html" title="Sensual JAV Beauty Mei Haruka Asian Hardcore" >
-                                 <img src="statics/images/movies/javhihi.com-sensual-jav-beauty-mei-haruka-fucked-hardcore.jpg" alt="Sensual JAV Beauty Mei Haruka Asian Hardcore">
-                                 <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                              </a>
-                              <span class="duration">42:48</span>
-                              <span class="quality">HD</span>
-                           </div>
-                           <div class="item-detail">
-                              <h4><a href="movie/sensual-jav-beauty-mei-haruka-asian-hardcore.42.html" title="Sensual JAV Beauty Mei Haruka Asian Hardcore">Sensual JAV Beauty Mei Haruka Asian Hardcore</a></h4>
-                              <p>
-                                 <span>786,104 views</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>1,199 likes</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>2015-07-31</span>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="video-item">
-                           <div class="item-thumbnail">
-                              <a href="movie/megumi-shino-is-fucked-like-crazy-in-twat.1219.html" title="Megumi Shino is fucked like crazy in twat" >
-                                 <img src="statics/images/movies/javhihi.com-megumi-shino-is-fucked-like-crazy-in-twat.jpg" alt="Megumi Shino is fucked like crazy in twat">
-                                 <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                              </a>
-                              <span class="duration">33:54</span>
-                              <span class="quality">HD</span>
-                           </div>
-                           <div class="item-detail">
-                              <h4><a href="movie/megumi-shino-is-fucked-like-crazy-in-twat.1219.html" title="Megumi Shino is fucked like crazy in twat">Megumi Shino is fucked like crazy in twat</a></h4>
-                              <p>
-                                 <span>8,589 views</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>20 likes</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>2016-05-14</span>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="video-item">
-                           <div class="item-thumbnail">
-                              <a href="movie/japanese-sweetie-maomi-nagasawa-squirts-in-threesome.1379.html" title="Japanese Sweetie Maomi Nagasawa Squirts in Threesome" >
-                                 <img src="statics/images/movies/javhihi.com-japanese-sweetie-maomi-nagasawa-squirts-buckets-in-threesome.jpg" alt="Japanese Sweetie Maomi Nagasawa Squirts in Threesome">
-                                 <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                              </a>
-                              <span class="duration">33:59</span>
-                              <span class="quality">HD</span>
-                           </div>
-                           <div class="item-detail">
-                              <h4><a href="movie/japanese-sweetie-maomi-nagasawa-squirts-in-threesome.1379.html" title="Japanese Sweetie Maomi Nagasawa Squirts in Threesome">Japanese Sweetie Maomi Nagasawa Squirts in Threesome</a></h4>
-                              <p>
-                                 <span>506,619 views</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>1,187 likes</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>2015-07-31</span>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="video-item">
-                           <div class="item-thumbnail">
-                              <a href="movie/mirai-sucks-cock-while-is-licked-on-twat.1210.html" title="Mirai sucks cock while is licked on twat" >
-                                 <img src="statics/images/movies/javhihi.com-mirai-sucks-cock-while-is-licked-on-twat.jpg" alt="Mirai sucks cock while is licked on twat">
-                                 <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                              </a>
-                              <span class="duration">18:30</span>
-                              <span class="quality">HD</span>
-                           </div>
-                           <div class="item-detail">
-                              <h4><a href="movie/mirai-sucks-cock-while-is-licked-on-twat.1210.html" title="Mirai sucks cock while is licked on twat">Mirai sucks cock while is licked on twat</a></h4>
-                              <p>
-                                 <span>32,792 views</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>75 likes</span>
-                                 <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                                 <span>2016-05-12</span>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="clearfix"></div>
-               </div>
-            </div>
-            
+            </div>           
+            @endforeach
             
             <footer class="visible-sm-block visible-md-block visible-lg-block">
                <div class="footer-menu">
@@ -738,7 +424,7 @@
                         </div>
                         <div class="footer-item">By entering this site you swear that you are of legal age in your area to view adult material and that you wish to view such material.</div>
                         <div class="footer-item copyright">© JavHiHi.com, 2016</div>
-                        <img src="../widgets.amung.us/classic/18/1810.png" style="border: 0; display: none;" />
+                        <img src="../widgets.amung.us/classic/18/1810.png') }}" style="border: 0; display: none;" />
                      </div>
                      <div class="col-md-3">
                         <div class="footer-item">
@@ -750,18 +436,18 @@
          </div>
          <div class="overlay"></div>
       </div>
-      <link rel="stylesheet" type="text/css" href="statics/assets/css/bootstrap.min.css" />
-      <link rel="stylesheet" type="text/css" href="statics/assets/css/bootstrap-theme.min.css" />
-      <link rel="stylesheet" type="text/css" href="statics/assets/css/style.min0c89.css?_=20160405" />
+      <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/css/bootstrap.min.css') }}" />
+      <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/css/bootstrap-theme.min.css') }}" />
+      <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/css/style.min0c89.css') }}?_=20160405" />
       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald:300" />
-      <script type='text/javascript' src="statics/assets/js/jquery.min.js"></script>
+      <script type='text/javascript' src="{{ URL::asset('assets/js/jquery.min.js') }}"></script>
       <!--[if lt IE 9]>
-      <script type="text/javascript" src="statics/assets/js/respond.min.js"></script>
+      <script type="text/javascript" src="{{ URL::asset('assets/js/respond.min.js') }}"></script>
       <![endif]-->
-      <script type='text/javascript' src="statics/assets/js/ejs.min.js"></script>
-      <script type='text/javascript' src="statics/assets/js/jquery.cookie.js"></script>		
-      <script type="text/javascript" src="statics/assets/js/jquery.caroufredsel-6.2.1.min.js"></script>
-      <script type="text/javascript" src="statics/assets/js/jquery.touchSwipe.min.js"></script>
-      <script type="text/javascript" src="statics/assets/js/slider.js"></script>
+      <script type='text/javascript' src="{{ URL::asset('assets/js/ejs.min.js') }}"></script>
+      <script type='text/javascript' src="{{ URL::asset('assets/js/jquery.cookie.js') }}"></script>		
+      <script type="text/javascript" src="{{ URL::asset('assets/js/jquery.caroufredsel-6.2.1.min.js') }}"></script>
+      <script type="text/javascript" src="{{ URL::asset('assets/js/jquery.touchSwipe.min.js') }}"></script>
+      <script type="text/javascript" src="{{ URL::asset('assets/js/slider.js') }}"></script>
    </body>  
 </html>
