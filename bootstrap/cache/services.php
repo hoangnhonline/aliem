@@ -25,9 +25,10 @@
     21 => 'Collective\\Html\\HtmlServiceProvider',
     22 => 'App\\Providers\\AppServiceProvider',
     23 => 'App\\Providers\\AuthServiceProvider',
-    24 => 'App\\Providers\\EventServiceProvider',
-    25 => 'App\\Providers\\RouteServiceProvider',
-    26 => 'Weidner\\Goutte\\GoutteServiceProvider',
+    24 => 'App\\Providers\\ViewComposerServiceProvider',
+    25 => 'App\\Providers\\EventServiceProvider',
+    26 => 'App\\Providers\\RouteServiceProvider',
+    27 => 'Weidner\\Goutte\\GoutteServiceProvider',
   ),
   'eager' => 
   array (
@@ -42,8 +43,9 @@
     8 => 'Illuminate\\View\\ViewServiceProvider',
     9 => 'App\\Providers\\AppServiceProvider',
     10 => 'App\\Providers\\AuthServiceProvider',
-    11 => 'App\\Providers\\EventServiceProvider',
-    12 => 'App\\Providers\\RouteServiceProvider',
+    11 => 'App\\Providers\\ViewComposerServiceProvider',
+    12 => 'App\\Providers\\EventServiceProvider',
+    13 => 'App\\Providers\\RouteServiceProvider',
   ),
   'deferred' => 
   array (
