@@ -34,7 +34,7 @@ Route::group(['namespace' => 'Frontend'], function()
     Route::get('/streaming/', ['as' => 'get-video-streaming', 'uses' => 'DetailController@streaming']);
 
     Route::get('/load-tab', ['as' => 'ajax-tab', 'uses' => 'HomeController@ajaxTab']);
-    Route::get('phim/{slugName}/xem-phim.html', ['as' => 'detail', 'uses' => 'DetailController@index']);
+    Route::get('phim/{slug}-{id}.html', ['as' => 'detail', 'uses' => 'DetailController@index']);
     Route::get('tags/{tagName}/', ['as' => 'tags', 'uses' => 'HomeController@tags']);
     Route::get('dao-dien/{name}/', ['as' => 'dao-dien', 'uses' => 'HomeController@daoDien']);
     Route::get('dien-vien/{name}/', ['as' => 'dien-vien', 'uses' => 'HomeController@dienVien']);

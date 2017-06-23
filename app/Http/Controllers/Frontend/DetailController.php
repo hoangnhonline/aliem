@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Models\Category;
-use App\Models\Country;
+use App\Models\Cate;
+use App\Models\Movies;
 use App\Models\Tag;
 use App\Models\TagObjects;
 use App\Models\Film;
@@ -27,23 +27,6 @@ class DetailController extends Controller
     public static $categoryArrKey = [];   
     
     public function __construct(){
-        
-        self::$parentCate = Category::getParentCateList( 1 );
-
-        if( self::$parentCate ){
-            foreach (self::$parentCate as $key => $value) {
-                self::$categoryArrKey[$value->id] = ['name' => $value->name, 'slug' => $value->slug];
-            }
-        }       
-
-        self::$countryArr = Country::orderBy('display_order')->get();
-
-        if( self::$countryArr ){
-            foreach (self::$countryArr as $key => $value) {
-                self::$categoryArrKey[$value->id] = ['name' => $value->name, 'slug' => $value->slug];
-            }
-        }
-        view()->share(['parentCate' => self::$parentCate, 'countryArr' => self::$countryArr, '']);
 
     }
 
@@ -54,110 +37,11 @@ class DetailController extends Controller
     */
     public function index(Request $request)
     {   
-
-        $is_landing = 0;
-        
-        $settingArr = Settings::whereRaw('1')->lists('value', 'name');
-
-        $tagSelected = $episodeActive = [];
-
-        $cateArr = $cateActiveArr = $moviesActiveArr = [];       
-        
-        $slugName = $request->slugName;
-        $slugEpisode = $request->slugEpisode ? $request->slugEpisode : "";
-
-        $tmp = Film::where('slug', $slugName)->select('id')->first();
-
-        $id = $tmp ? $tmp->id : -1;
-        
-        Helper::counter($id);
-        $has_report = true;
-        $detail = Film::where( 'id', $id )
-                ->select('id', 'title', 'slug', 'description', 'quality', 'duration', 'image_url', 'poster_url', 'content', 'imdb', 'type', 'meta_id', 'release_year')                
-                ->first();       
-        
-        if( $detail ){ 
-            
-            $episode = FilmEpisode::where('film_id', $id)->orderBy('display_order', 'asc')->get();
-
-            if( $slugEpisode ){
-                $episodeActive = FilmEpisode::where('film_id', $id)->where('slug', $slugEpisode)->orderBy('display_order', 'asc')->first();                
-
-            }else{
-                $episodeActive = FilmEpisode::where('film_id', $id)->orderBy('display_order', 'asc')->first();
-            }        
-            $cate = $detail->filmCategory($id);
-           
-            $category_id = $cate[0]; 
-            
-            $cateDetail = Category::where('id', $category_id )->select('id', 'name', 'slug')->first();
-            
-            $relatedArr = Film::where('id', '<>', $id)
-                        ->join('film_category', 'film_category.film_id', '=', 'film.id')
-                        ->where('category_id', $category_id)
-                        ->where('film.status', 1)
-                        ->select('id', 'title', 'slug', 'image_url', 'quality', 'meta_id')
-                        ->orderBy('id', 'desc')
-                        ->limit(12)
-                        ->get();            
-            //tags
-            $tmpArr = TagObjects::where( ['tag_objects.type' => 1, 'object_id' => $id] )
-                        ->join('tag', 'tag.id', '=', 'tag_objects.tag_id')
-                        ->select('name', 'slug')
-                        ->get();
-            
-            if( $tmpArr->count() > 0 ){
-                foreach ($tmpArr as $value) {                
-                    $tagSelected[] = $value;
-                }
-            }
-            $metadata = SystemMetadata::find( $detail->meta_id ); 
-
-            $title = trim($metadata->meta_title) ? $metadata->meta_title : $detail->title;
-            $next_link = "";
-            if($detail->type == 1){
-                $title = "Xem phim ".$title;
-            }else{
-                 $title = $episodeActive->name ." ". $title;
-                 $next_link = $this->getNextLink($detail, $episodeActive);
-            }
-
-            $tmp = Helper::crop_str(strip_tags($detail->content), 155);
-            
-
-
-            $description = trim($metadata->meta_description) ? $metadata->meta_description : "Xem phim ".$title ." ".$tmp;
-
-            $arrKhoPhim = [];
-            if(Session::get('userId') > 0){
-                $arrKhoPhim = KhoPhim::where('customer_id', Session::get('userId'))->lists('film_id')->toArray();                
-            }
-            $urlVideo = [];
-            if($episodeActive){
-                $urlVideo = $this->getLink($episodeActive->source);
-                $urlVideo = !empty($urlVideo) ? $urlVideo : ['360p' =>'', '480p' => '', '720p' => '' , 'hd' => ''];                
-                $has_report = Helper::checkHasReport($id, $episodeActive->id);
-            }else{
-                $urlVideo = ['360p' =>'', '480p' => '', '720p' => '' , 'hd' => ''];
-            }
-            
-            return view('home.detail', compact(
-            'settingArr',
-            'title',
-            'tagSelected', 
-            'relatedArr', 
-            'detail',               
-            'cateDetail',
-            'episode',
-            'episodeActive',
-            'is_landing',
-            'urlVideo',
-            'arrKhoPhim',
-            'description',
-            'next_link',
-            'has_report'
-            )); 
-            
+        $id = $request->id;
+        $detail = Movies::find($id);
+        if($detail){
+            $seo['title'] = $seo['description'] = $seo['keywords'] = $detail->title;
+            return view('frontend.detail.index', compact('detail', 'seo'));        
                
         }else{
             return view('errors.404');
