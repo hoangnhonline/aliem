@@ -17,7 +17,7 @@
                      <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                   </a>
                   <div class="item-head">
-                     <h3><a href="{{ route('detail', [$vid->slug, $vid->id]) }}"  title="{!! $vid->title !!}">{{ $i }}=={!! $vid->title !!}</a></h3>
+                     <h3><a href="{{ route('detail', [$vid->slug, $vid->id]) }}"  title="{!! $vid->title !!}">{!! $vid->title !!}</a></h3>
                      <span>
                      </span>
                   </div>
