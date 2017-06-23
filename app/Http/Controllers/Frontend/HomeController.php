@@ -9,23 +9,11 @@ use App\Models\Import;
 use App\Models\CrwVideo;
 use App\Models\Cate;
 use App\Models\Movies;
-use App\Models\Tag;
-use App\Models\TagObjects;
 use App\Models\Settings;
-use App\Models\Articles;
-use App\Models\ArticlesCate;
-use App\Models\FilmEpisode;
-use App\Models\Privilege;
-use App\Models\RolePrivilege;
 use Helper, File, Session;
 
 class HomeController extends Controller
 {
-    
-    public static $parentCate = [];
-    public static $countryArr = [];
-    public static $countryArrKey = [];
-    public static $categoryArrKey = [];    
 
     public function __construct(){
         $date = date('Y-m-d', time());
@@ -66,8 +54,8 @@ class HomeController extends Controller
         foreach($cateList as $cate){
             $moviesArr[$cate->id] = Movies::where('cate_id',  $cate->id)->orderBy('id', 'desc')->limit(9)->get();
         }
-
-        return view('frontend.home.index', compact(['moviesArr']));
+        $hotMovies = Movies::orderBy('id', 'desc')->limit(10)->get();
+        return view('frontend.home.index', compact(['moviesArr', 'hotMovies']));
     }
     
     public function ajaxTab(Request $request){
