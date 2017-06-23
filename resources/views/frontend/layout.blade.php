@@ -196,7 +196,7 @@
          </div>
          <div class="overlay"></div>
       </div>
-      <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/css/bootstrap.min.css') }}" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/css/bootstrap-theme.min.css') }}" />
       <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/css/style.min0c89.css') }}?_=20160405" />
       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald:300" />
