@@ -17,7 +17,7 @@ class HomeController extends Controller
 
     public function __construct(){
         $date = date('Y-m-d', time());
-
+        
         if(Import::where('imported_date', $date)->count() == 0){
             $cateList = Cate::where('status', 1)->orderBy('display_order')->get();
             foreach($cateList as $cate){
@@ -37,7 +37,7 @@ class HomeController extends Controller
                     $vid->update(['site_id_publish' => 1, 'publish_status' => 1]);   
                 }
             }
-            Import::create(['imported_date', $date]);
+            Import::create(['imported_date' => $date]);
         }
         
 
