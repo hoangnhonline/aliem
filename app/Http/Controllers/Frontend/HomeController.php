@@ -94,98 +94,24 @@ class HomeController extends Controller
     */
     public function search(Request $request)
     {
-
-        $settingArr = Settings::whereRaw('1')->lists('value', 'name');
-        
-        $layout_name = "main-category";
-        
-        $page_name = "page-category";
-
-        $cateArr = $cateActiveArr = $moviesActiveArr = [];
-
-        $tu_khoa = $request->k;
+        $tu_khoa = $request->keyword;
         
         $is_search = 1;
 
-        $moviesArr = Film::where('alias', 'LIKE', '%'.$tu_khoa.'%')->orderBy('id', 'desc')->paginate(20);
-
-        return view('home.cate', compact('settingArr', 'moviesArr', 'tu_khoa',  'is_search', 'layout_name', 'page_name' ));
+        $moviesList = Movies::where('title', 'LIKE', '%'.$tu_khoa.'%')->orderBy('id', 'desc')->paginate(30);
+        $seo['title'] = $seo['description'] = $seo['keywords'] = "Kết quả tìm kiếm theo từ khóa : ".$tu_khoa;
+        return view('frontend.cate.search', compact('moviesList', 'tu_khoa', 'seo' ));
     }
 
     public function cate(Request $request)
     {
-        $settingArr = Settings::whereRaw('1')->lists('value', 'name');
-
-        $layout_name = "main-category";
-        
-        $page_name = "page-category";
-
-        $cateArr = $cateActiveArr = $moviesActiveArr = [];
-
-       
-        $is_search = 0;
         $slug = $request->slug;
-        $title = '';
-        $cateDetail = (object) [];
-        //var_dump($slug);die;
-        if( $slug == 'phim-le' || $slug == 'phim-bo'){
-            $type = $slug == 'phim-le' ? 1 : 2;
-            $moviesArr = Film::where('status', 1)->where('type', $type)
-                        ->orderBy('id', 'desc')->paginate(30);       
-            $cateDetail->name = $slug == "phim-le" ? "Phim lẻ" : "Phim bộ";
-        }elseif($slug == 'phim-theo-the-loai' || $slug == 'phim-theo-quoc-gia'){
-            
-           if($slug == 'phim-theo-the-loai'){
-                 $moviesArr = Film::where('status', 1)
-                ->join('film_category', 'id', '=', 'film_category.film_id')                
-                ->groupBy('film_id')
-                ->orderBy('id', 'desc')->paginate(30); 
-           }else{
-                $moviesArr = Film::where('status', 1)
-                ->join('film_country', 'id', '=', 'film_country.film_id')                   
-                ->groupBy('film_id')
-                ->orderBy('id', 'desc')->paginate(30);       
-           }   
-            $cateDetail->name = $slug == "phim-theo-the-loai" ? "Phim theo thể loại" : "Phim theo quốc gia";
-            
-        }else{
-            $cateDetail = Category::where('slug', $slug)->first();
+        $cateDetail = Cate::where('slug', $slug)->first();
+        $seo['title'] = $seo['description'] = $seo['keywords'] = $cateDetail->name;
 
-            if( !$cateDetail){
-                $cateDetail = Country::where('slug', $slug)->first();
-                if(!$cateDetail){
-                    return redirect()->route('home');
-                }
-                $moviesArr = Film::where('status', 1)
-                ->join('film_country', 'id', '=', 'film_country.film_id')
-                ->where('film_country.country_id', $cateDetail->id)
-                ->groupBy('film_id')
-                ->orderBy('id', 'desc')->paginate(30);        
-            }else{
-                 $moviesArr = Film::where('status', 1)
-                ->join('film_category', 'id', '=', 'film_category.film_id')
-                ->where('film_category.category_id', $cateDetail->id)
-                ->groupBy('film_id')
-                ->orderBy('id', 'desc')->paginate(30);        
-            }
-            $title = trim($cateDetail->meta_title) ? $cateDetail->meta_title : $cateDetail->name;
-        }
-        $arrEpisode = [];
-        if($moviesArr->count() > 0){
-            foreach( $moviesArr as $phim)
-            {
-                if($phim->type == 2){
-                        $tmp = FilmEpisode::where('film_id', $phim->id)->orderBy('display_order', 'desc')->orderBy('id', 'desc')->select('name')->first();
-                        if($tmp){
-                            $arrEpisode[$phim->id] = $tmp->name;
-                        }
-
-                }
-            }
-        }
-        $seo = Helper::seo();  
+        $moviesList = Movies::where('cate_id', $cateDetail->id)->orderBy('id', 'desc')->paginate(30);  
         //var_dump($seo);die;  
-        return view('home.cate', compact('title', 'settingArr', 'is_search', 'moviesArr', 'cateDetail', 'layout_name', 'page_name', 'cateActiveArr', 'moviesActiveArr', 'seo', 'arrEpisode'));
+        return view('frontend.cate.index', compact('cateDetail', 'seo', 'moviesList'));
     }
 
     public function tags(Request $request)

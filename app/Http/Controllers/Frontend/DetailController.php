@@ -8,23 +8,12 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Models\Cate;
 use App\Models\Movies;
-use App\Models\Tag;
-use App\Models\TagObjects;
-use App\Models\Film;
-use App\Models\FilmEpisode;
-use App\Models\Settings;
-use App\Models\SystemMetadata;
-use App\Models\KhoPhim;
 
 use Helper, File, Session, DB;
 
 
 class DetailController extends Controller
-{    
-    public static $parentCate = [];
-    public static $countryArr = [];
-    public static $countryArrKey = [];
-    public static $categoryArrKey = [];   
+{ 
     
     public function __construct(){
 
@@ -41,8 +30,10 @@ class DetailController extends Controller
         $detail = Movies::find($id);
         if($detail){
             $seo['title'] = $seo['description'] = $seo['keywords'] = $detail->title;
-            return view('frontend.detail.index', compact('detail', 'seo'));        
-               
+            $otherList = Movies::where('cate_id', $detail->cate_id)->where('id', '<>', $id)->orderBy('id', 'desc')->limit(9)->get();   
+            $cateDetail = Cate::find($detail->cate_id);
+            return view('frontend.detail.index', compact('detail', 'seo', 'otherList', 'cateDetail'));        
+            
         }else{
             return view('errors.404');
         }

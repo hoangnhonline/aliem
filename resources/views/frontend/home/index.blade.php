@@ -16,7 +16,7 @@
 <div class="container">
    <div class="box">
       <div class="clearfix"></div>
-      <h3 class="title">{!! $cate->name !!} <a href="movie.html" title="View more newest movies"><i class="glyphicon glyphicon-chevron-right"></i></a></h3>
+      <h3 class="title">{!! $cate->name !!} <a href="{{ route('cate', $cate->slug) }}" title="{!! $cate->name !!}"><i class="glyphicon glyphicon-chevron-right"></i></a></h3>
       <div class="movie-list">
           @foreach($moviesArr[$cate->id] as $vid)
          <div class="col-md-4 col-sm-6">

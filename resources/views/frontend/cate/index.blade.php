@@ -4,7 +4,7 @@
 <div class="container">
    <div class="box">
       <div class="clearfix"></div>
-      <h3 class="title">Kết quả tìm kiếm theo từ khóa : "{{ $tu_khoa }}" </h3>
+      <h3 class="title">{!! $cateDetail->name !!} <a href="{{ route('cate', [$cateDetail->slug]) }}" title="View more newest movies"><i class="glyphicon glyphicon-chevron-right"></i></a></h3>
       <div class="movie-list">        
           @foreach($moviesList as $vid)
          <div class="col-md-4 col-sm-6">

@@ -80,281 +80,41 @@ if($isXvideo == 1){
    </div>
 </div>
 <div class="container">
-   <div class="col-md-12">
+   
       <div class="box movie-detail">
          <h1 class="title">{!! $detail->title !!}</h1>
          <p style="margin-top: 10px; padding: 0 10px;"><b>Ngày đăng:</b> {!! date('d-m-Y', strtotime($detail->created_at)) !!}, <b>Thời lượng:</b> {!! $detail->duration !!}</p>                  
       </div>
-   </div>   
+   
 </div>
 <div class="container">
    <div class="box" style="margin-top: 0 !important;">     
       <h3 class="title" style="font-weight: both">Phim liên quan</h3>
-      <div class="movie-list">
+      <div class="movie-list">         
+         @foreach($otherList as $vid)
          <div class="col-md-4 col-sm-6">
             <div class="video-item">
                <div class="item-thumbnail">
-                  <a href="hot-aika-hoshino-gets-vibrator-on-her-clit.946.html" title="Hot Aika Hoshino gets vibrator on her clit" >
-                     <img src="../../statics.phim18.fun/images/movies/phim18.fun-hot-aika-hoshino-gets-vibrator-on-her-clit.jpg" alt="Hot Aika Hoshino gets vibrator on her clit" />
+                  <a href="{{ route('detail', [ $vid->slug, $vid->id ]) }}" title="{!! $vid->title !!}" >
+                     <img src="{!! $vid->image_url !!}" alt="{!! $vid->title !!}">
                      <div class="link-overlay glyphicon glyphicon-play-circle"></div>
                   </a>
-                  <span class="duration">11:19</span>
-                  <span class="quality">HD</span>
+                  <span class="duration">{{ $vid->duration }}</span>
+                  <!--<span class="quality">HD</span>-->
                </div>
                <div class="item-detail">
-                  <h4><a href="hot-aika-hoshino-gets-vibrator-on-her-clit.946.html" title="Hot Aika Hoshino gets vibrator on her clit">Hot Aika Hoshino gets vibrator on her clit</a></h4>
+                  <h4><a href="{{ route('detail', [ $vid->slug, $vid->id ]) }}" title="{!! $vid->title !!}">{!! $vid->title !!}</a></h4>
                   <p>
-                     <span>31,314 views</span>
+                     <!--<span>47 views</span>
                      <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>54 likes</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>2016-03-31</span>
+                     <span>0 likes</span>
+                     <i class="glyphicon glyphicon-one-fine-dot"></i> -->
+                     <span>{!! date('d-m-Y H:i', strtotime($vid->created_at)) !!}</span>
                   </p>
                </div>
             </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-            <div class="video-item">
-               <div class="item-thumbnail">
-                  <a href="sporty-aika-hoshino-plays-with-sex-toys-to-stay-on-the-team.912.html" title="Sporty Aika Hoshino Plays With Sex Toys to Stay on the Team" >
-                     <img src="../../statics.phim18.fun/images/movies/phim18.fun-sporty-aika-hoshino-plays-with-sex-toys-to-stay-on-the-team.jpg" alt="Sporty Aika Hoshino Plays With Sex Toys to Stay on the Team" />
-                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                  </a>
-                  <span class="duration">16:21</span>
-                  <span class="quality">HD</span>
-               </div>
-               <div class="item-detail">
-                  <h4><a href="sporty-aika-hoshino-plays-with-sex-toys-to-stay-on-the-team.912.html" title="Sporty Aika Hoshino Plays With Sex Toys to Stay on the Team">Sporty Aika Hoshino Plays With Sex Toys to Stay on the Team</a></h4>
-                  <p>
-                     <span>31,265 views</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>54 likes</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>2016-03-25</span>
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-            <div class="video-item">
-               <div class="item-thumbnail">
-                  <a href="asuka--hardcore-into-kinky-doggy-style-sex.417.html" title="Asuka hardcore into kinky doggy style sex" >
-                     <img src="../../statics.phim18.fun/images/movies/phim18.fun-asuka-hardcore-into-kinky-doggy-style-sex.jpg" alt="Asuka hardcore into kinky doggy style sex" />
-                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                  </a>
-                  <span class="duration">44:46</span>
-                  <span class="quality">HD</span>
-               </div>
-               <div class="item-detail">
-                  <h4><a href="asuka--hardcore-into-kinky-doggy-style-sex.417.html" title="Asuka hardcore into kinky doggy style sex">Asuka hardcore into kinky doggy style sex</a></h4>
-                  <p>
-                     <span>75,929 views</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>92 likes</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>2016-01-09</span>
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-            <div class="video-item">
-               <div class="item-thumbnail">
-                  <a href="riko-masaki-in-uniform-is-deeply-fucked.511.html" title="Riko Masaki in uniform is deeply fucked" >
-                     <img src="../../statics.phim18.fun/images/movies/phim18.fun-riko-masaki-in-uniform-is-deeply-fucked.jpg" alt="Riko Masaki in uniform is deeply fucked" />
-                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                  </a>
-                  <span class="duration">35:46</span>
-                  <span class="quality">HD</span>
-               </div>
-               <div class="item-detail">
-                  <h4><a href="riko-masaki-in-uniform-is-deeply-fucked.511.html" title="Riko Masaki in uniform is deeply fucked">Riko Masaki in uniform is deeply fucked</a></h4>
-                  <p>
-                     <span>64,103 views</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>114 likes</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>2016-01-24</span>
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-            <div class="video-item">
-               <div class="item-thumbnail">
-                  <a href="shizuku--morino-gets-a-very-nice-creamed-pussy.318.html" title="Shizuku Morino gets a very nice creamed pussy" >
-                     <img src="../../statics.phim18.fun/images/movies/phim18.fun-shizuku-morino-gets-a-very-nice-creamed-pussy.jpg" alt="Shizuku Morino gets a very nice creamed pussy" />
-                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                  </a>
-                  <span class="duration">57:10</span>
-                  <span class="quality">HD</span>
-               </div>
-               <div class="item-detail">
-                  <h4><a href="shizuku--morino-gets-a-very-nice-creamed-pussy.318.html" title="Shizuku Morino gets a very nice creamed pussy">Shizuku Morino gets a very nice creamed pussy</a></h4>
-                  <p>
-                     <span>196,723 views</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>320 likes</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>2015-12-24</span>
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-            <div class="video-item">
-               <div class="item-thumbnail">
-                  <a href="aika-hoshin-naughty-cat-licks-hard-cock.836.html" title="Aika Hoshin naughty cat licks hard cock" >
-                     <img src="../../statics.phim18.fun/images/movies/phim18.fun-aika-hoshin-naughty-cat-licks-hard-cock.jpg" alt="Aika Hoshin naughty cat licks hard cock" />
-                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                  </a>
-                  <span class="duration">29:18</span>
-                  <span class="quality">HD</span>
-               </div>
-               <div class="item-detail">
-                  <h4><a href="aika-hoshin-naughty-cat-licks-hard-cock.836.html" title="Aika Hoshin naughty cat licks hard cock">Aika Hoshin naughty cat licks hard cock</a></h4>
-                  <p>
-                     <span>37,055 views</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>46 likes</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>2016-03-15</span>
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-            <div class="video-item">
-               <div class="item-thumbnail">
-                  <a href="busty-jav-super-pornstar-yukina-mori-gets-cum-in-her-pussy.653.html" title="Busty JAV Super pornstar Yukina Mori Gets Cum in her Pussy" >
-                     <img src="../../statics.phim18.fun/images/movies/phim18.fun-busty-jav-superstar-yukina-mori-gets-cum-in-her-pussy.jpg" alt="Busty JAV Super pornstar Yukina Mori Gets Cum in her Pussy" />
-                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                  </a>
-                  <span class="duration">37:05</span>
-                  <span class="quality">HD</span>
-               </div>
-               <div class="item-detail">
-                  <h4><a href="busty-jav-super-pornstar-yukina-mori-gets-cum-in-her-pussy.653.html" title="Busty JAV Super pornstar Yukina Mori Gets Cum in her Pussy">Busty JAV Super pornstar Yukina Mori Gets Cum in her Pussy</a></h4>
-                  <p>
-                     <span>271,245 views</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>489 likes</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>2016-02-15</span>
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-            <div class="video-item">
-               <div class="item-thumbnail">
-                  <a href="schoolgirl--yukari-gets-a-creampie-during-a-field-trip.682.html" title="Schoolgirl Yukari gets a Creampie During a Field Trip" >
-                     <img src="../../statics.phim18.fun/images/movies/phim18.fun-schoolgirl-yukari-gets-a-creampie-during-a-field-trip.jpg" alt="Schoolgirl Yukari gets a Creampie During a Field Trip" />
-                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                  </a>
-                  <span class="duration">28:31</span>
-                  <span class="quality">HD</span>
-               </div>
-               <div class="item-detail">
-                  <h4><a href="schoolgirl--yukari-gets-a-creampie-during-a-field-trip.682.html" title="Schoolgirl Yukari gets a Creampie During a Field Trip">Schoolgirl Yukari gets a Creampie During a Field Trip</a></h4>
-                  <p>
-                     <span>79,632 views</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>161 likes</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>2016-02-20</span>
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-            <div class="video-item">
-               <div class="item-thumbnail">
-                  <a href="aika-hoshino-is-fucked-through-crotchless.803.html" title="Aika Hoshino is fucked through crotchless" >
-                     <img src="../../statics.phim18.fun/images/movies/phim18.fun-aika-hoshino-is-fucked-through-crotchless.jpg" alt="Aika Hoshino is fucked through crotchless" />
-                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                  </a>
-                  <span class="duration">35:36</span>
-                  <span class="quality">HD</span>
-               </div>
-               <div class="item-detail">
-                  <h4><a href="aika-hoshino-is-fucked-through-crotchless.803.html" title="Aika Hoshino is fucked through crotchless">Aika Hoshino is fucked through crotchless</a></h4>
-                  <p>
-                     <span>44,383 views</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>46 likes</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>2016-03-10</span>
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-            <div class="video-item">
-               <div class="item-thumbnail">
-                  <a href="ai-sakura-licks-woody-while-is-screwed.1030.html" title="Ai Sakura licks woody while is screwed" >
-                     <img src="../../statics.phim18.fun/images/movies/phim18.fun-ai-sakura-licks-woody-while-is-screwed.jpg" alt="Ai Sakura licks woody while is screwed" />
-                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                  </a>
-                  <span class="duration">33:41</span>
-                  <span class="quality">HD</span>
-               </div>
-               <div class="item-detail">
-                  <h4><a href="ai-sakura-licks-woody-while-is-screwed.1030.html" title="Ai Sakura licks woody while is screwed">Ai Sakura licks woody while is screwed</a></h4>
-                  <p>
-                     <span>27,904 views</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>28 likes</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>2016-04-14</span>
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-            <div class="video-item">
-               <div class="item-thumbnail">
-                  <a href="horny--teen-porn-star-riko-masaki-into-hot-fucking-action.594.html" title="Horny teen porn star Riko Masaki into hot fucking action" >
-                     <img src="../../statics.phim18.fun/images/movies/phim18.fun-horny-teen-porn-star-riko-masaki-into-hot-fucking-action.jpg" alt="Horny teen porn star Riko Masaki into hot fucking action" />
-                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                  </a>
-                  <span class="duration">33:34</span>
-                  <span class="quality">HD</span>
-               </div>
-               <div class="item-detail">
-                  <h4><a href="horny--teen-porn-star-riko-masaki-into-hot-fucking-action.594.html" title="Horny teen porn star Riko Masaki into hot fucking action">Horny teen porn star Riko Masaki into hot fucking action</a></h4>
-                  <p>
-                     <span>46,310 views</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>79 likes</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>2016-02-06</span>
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-            <div class="video-item">
-               <div class="item-thumbnail">
-                  <a href="naughty-schoolgirl-aika-hoshino-nailed-by-her-teachers.923.html" title="Naughty Schoolgirl Aika Hoshino Nailed by Her Teachers" >
-                     <img src="../../statics.phim18.fun/images/movies/phim18.fun-naughty-schoolgirl-aika-hoshino-nailed-by-her-teachers.jpg" alt="Naughty Schoolgirl Aika Hoshino Nailed by Her Teachers" />
-                     <div class="link-overlay glyphicon glyphicon-play-circle"></div>
-                  </a>
-                  <span class="duration">21:31</span>
-                  <span class="quality">HD</span>
-               </div>
-               <div class="item-detail">
-                  <h4><a href="naughty-schoolgirl-aika-hoshino-nailed-by-her-teachers.923.html" title="Naughty Schoolgirl Aika Hoshino Nailed by Her Teachers">Naughty Schoolgirl Aika Hoshino Nailed by Her Teachers</a></h4>
-                  <p>
-                     <span>48,709 views</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>60 likes</span>
-                     <i class="glyphicon glyphicon-one-fine-dot"></i> 
-                     <span>2016-03-27</span>
-                  </p>
-               </div>
-            </div>
-         </div>
+         </div>                     
+         @endforeach
       </div>
       <div class="clearfix"></div>
    </div>

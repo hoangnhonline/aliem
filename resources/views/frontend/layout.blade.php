@@ -52,11 +52,11 @@
             <div class="container">
                <div class="logo header-item"><a href="{{ route('home') }}" title="phim18.fun"><img src="{{ URL::asset('assets/img/logo.png') }}" alt="phim18.fun" /></a></div>
                <div class="form-search header-item">
-                  <form onsubmit="return search();">
+                  <form method="get" action="{{ route('search') }}">
                      <div class="input-group">
-                        <input type="text" class="form-control input-sm keyword" placeholder="Search..." autocomplete="off" value="" />
+                        <input type="text" name="keyword" class="form-control input-sm keyword" placeholder="Tìm kiếm..." autocomplete="off" value="{!! isset($tu_khoa) ? $tu_khoa : "" !!}" />
                         <span class="input-group-btn">
-                        <button class="btn btn-sm btn-search" style="outline: 0;"><span class="glyphicon glyphicon-search"></span></button>
+                        <button class="btn btn-sm btn-search" type="submit" style="outline: 0;"><span class="glyphicon glyphicon-search"></span></button>
                         </span>
                      </div>
                   </form>
@@ -64,7 +64,7 @@
                <div class="header-links header-item">
                   <ul>
                     @foreach($cateList as $cate)
-                     <li><a href="{{ route('cate',[$cate->slug]) }}" title="{!! $cate->name !!}"><span>{!! $cate->name !!}</span></a></li>                     
+                     <li><a @if(isset($cateDetail) && $cateDetail->id == $cate->id) class="active" @endif href="{{ route('cate',[$cate->slug]) }}" title="{!! $cate->name !!}"><span>{!! $cate->name !!}</span></a></li>                     
                      @endforeach
                   </ul>
                </div>
@@ -72,18 +72,16 @@
          </header>
          <div class="header-mobile">
             <button type="button" class="show-sidebar-left"><i class="glyphicon glyphicon-menu-hamburger"></i></button>
-            <a href="index.html" title="phim18.fun"><img src="{{ URL::asset('assets/img/logo.png') }}" alt="phim18.fun" /></a>
+            <a href="{{ route('home') }}" title="phim18.fun"><img src="{{ URL::asset('assets/img/logo.png') }}" alt="phim18.fun" /></a>
          </div>
          <div class="main-page">
             @yield('bcrum')
             @yield('slider')
             @yield('content')
-            
-            
             <footer class="visible-sm-block visible-md-block visible-lg-block">
                <div class="footer-menu">
                   <div class="container">
-                     <a href="index.html" title="phim18.fun">Home</a>
+                     <a href="{{ route('home') }}" title="phim18.fun">Home</a>
                      <a href="movie/keywords.html" title="Top Searches">Top Searches</a>
                      <!-- <a href="faq.html" title="FAQ">FAQ</a> -->
                      <a href="terms.html" title="Terms &amp; Conditions">Terms &amp; Conditions</a>
